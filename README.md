@@ -1,2 +1,1 @@
-# PRACS
-college pracs
+these are college pracs xd
