@@ -1,33 +1,36 @@
 #include<stdio.h>
+#define Arr_Size 1000
+
 void linear_search(int [],int,int);
 void main()
 {
-int a[10],x,n,i;
+int stArray[Arr_Size] ,ReqElem,Arr_Req;
+
 printf("\nEnter the size of array:");
-scanf("%d",&n);
+scanf("%d",&Arr_Req);
 printf("\nEnter the elements of array:");
-for(i=0;i<n;i++)
-scanf("%d",&a[i]);
+for(int i=0;i<Arr_Req;i++)
+scanf("%d",&stArray[i]);
 printf("\nEnter the element which u want to searched:");
-scanf("%d",&x);
-linear_search(a,n,x);
+scanf("%d",&ReqElem);
+linear_search(stArray,Arr_Req,ReqElem);
 }
 
-void linear_search(int a[10],int n,int x)
+void linear_search(int stArray[Arr_Size],int n,int ReqElem)
 {
    int i,flag;
   for(i=0;i<n;i++)
    {
-  if(a[i]==x)
+  if(stArray[i]==ReqElem)
    {
 	flag=1;
 	break;
    }
 }
 if(flag==1)
-   printf("%d is found at position %d",a[i],i+1);
+   printf("%d is found at position %d",ReqElem,i+1);
    else
-printf("%d is not found",a[i]);
+printf("%d is not found",ReqElem);
 }
 
    
