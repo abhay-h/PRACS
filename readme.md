@@ -2,10 +2,10 @@ This is stupid college stuff done unnecessarily #boring_college_life
 
 if (interest == 1)
 {
-      printf("i am interested");
+      printf("😎");
 
 }
    else 
    {
-      printf("i am not interested");
+      printf("🙄");
    }
