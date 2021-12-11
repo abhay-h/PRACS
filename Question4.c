@@ -1,21 +1,22 @@
-#include<iostream>
-using namespace std;
-int main()
-{
+    #include<stdio.h>
+    #include <stdlib.h>
+
+    int main()
+    {
     int arr[5], tot=5, elem,found=0;
-    cout<<"Enter 5 Array Elements: ";
+    printf("Enter 5 Array Elements: ");
     for(int i=0; i<tot; i++) // taking array as input
 
-        cin>>arr[i];
+     scanf("%d",&arr[i]);
 
-    cout<<"\nEnter Element to Delete: ";
-    cin>>elem; // taking input for number to be deleted
+    printf("\nEnter Element to Delete: ");
+    scanf("%d",&elem); // taking input for number to be deleted
 
     for(int i=0; i<tot; i++)
     {
         if(arr[i]==elem)
         {
-            for(int j=i; j<(tot-1); j++)
+            for(int j=i; j<(tot-1); j++)    
                 arr[j] = arr[j+1];
             found++;
             i--;
@@ -23,15 +24,15 @@ int main()
         }
     }
     if(found==0) // to check presence of give number in array
-        cout<<"\nElement doesn't found in the Array!";
+       printf("\nElement doesn't found in the Array!");
     else
-        cout<<"\nElement Deleted Successfully!";
-    cout<<endl;
+        printf("\nElement Deleted Successfully!");
+        printf("\n");
 
 
     for(int i=0; i<tot; i++)
     {
-       cout << arr[i];
+      printf("%d\t",arr[i]);
     }
     return 0;
 }

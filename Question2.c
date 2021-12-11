@@ -1,34 +1,36 @@
 //Create a 2D array and accept value from user and print the array elements 
 
-#include<iostream>
-using namespace std;
+#include <stdio.h>
+#include <stdlib.h>
 int main()
 {
-        int arr[15][15], rows, cols, i, j;
-        cout<<"\n Enter Rows for Array : ";
-        cin>>rows;
-        cout<<"\n Enter Columns for Array: ";
-        cin>>cols;
-        cout<<"\n Enter "<<rows<<"*"<<cols<<" Array Elements : \n";
+        int arr[15][15], rows, cols;
+        printf("\n Enter Rows for Array : ");
+        scanf("%d", &rows);
+        printf("\n Enter Columns for Array: ");
+        scanf("%d", &cols);
+       printf("\n****Enter Row ** and Columns for Array****:  ");
 
-        for(i=0; i<rows; i++)
+        for(int i=0; i<rows; i++)
         {
-                for(j=0; j<cols; j++)
+                for(int j=0; j<cols; j++)
                 {
-                        cout<<" ";
-                        cin>>arr[i][j];
+                   printf("\nelements : [%d][%d]: ",i,j);
+                       scanf("%d",&arr[i][j]);
                 }
         }
 
-        cout<<"\n Two Dimensional Array is : \n";
+       printf("\nTwo Dimensional Array is : ");
         
-        for(i=0; i<rows; i++)
-        {
-                for(j=0; j<cols; j++)
-                {
-                        cout<<" "<<arr[i][j]<<" ";
-                }
-                cout<<"\n";
-        }
+        for(int i=0;i<rows;i++)
+	{
+		for(int j=0;j<cols;j++)
+		{
+			printf("%d ",arr[i][j]);
+		
+		}
+	}
         return 0;
-}
+} 
+
+ 
