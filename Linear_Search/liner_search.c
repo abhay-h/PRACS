@@ -56,5 +56,3 @@ scanf("%s",sname);
 linear_search(c,cnt,sname);
 }
 
- 
-
